@@ -25,22 +25,22 @@ function promptUser() {
       {
         type: "input",
         name: "installation",
-        message: "What is your favorite food?"
+        message: "Installation."
       },
       {
         type: "input",
         name: "usage",
-        message: "Enter your GitHub Username"
+        message: "Intended use."
       },
       {
         type: "input",
         name: "license",
-        message: "Enter your LinkedIn URL."
+        message: "License."
       },
       {
         type: "input",
         name: "contributing",
-        message: "Enter your GitHub Username"
+        message: "Who contributed?"
       },
       {
         type: "input",
@@ -50,7 +50,7 @@ function promptUser() {
       {
         type: "input",
         name: "questions",
-        message: "Enter your GitHub Username"
+        message: "Questions?"
       },
     ]);
   }
