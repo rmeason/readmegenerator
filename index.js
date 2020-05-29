@@ -58,15 +58,15 @@ function promptUser() {
   function generateMD(answers) {
     return `
 
-${answers.title}
-${answers.description}
-${answers.contents}
-${answers.instllation}
-${answers.usage}
-${answers.license}
-${answers.contributing}
-${answers.tests}
-${answers.questions}
+    Project title: ${ answers.title}
+    Descritption: ${ answers.description}
+    Table of Contents: ${ answers.contents}
+    Installation: ${ answers.instllation}
+    Usage: ${ answers.usage}
+    License: ${ answers.license}
+    Contributing: ${ answers.contributing}
+    Tests: ${ answers.tests}
+    Questions: ${ answers.questions}
 
 `;
   }
