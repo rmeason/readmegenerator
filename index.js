@@ -54,3 +54,32 @@ function promptUser() {
       },
     ]);
   }
+
+  function generateMD(answers) {
+    return `
+
+${answers.title}
+${answers.description}
+${answers.contents}
+${answers.instllation}
+${answers.usage}
+${answers.license}
+${answers.contributing}
+${answers.tests}
+${answers.questions}
+
+`;
+  }
+
+  promptUser()
+  .then(function(answers) {
+    const md = generateMD(answers);
+
+    return writeFileAsync("Readme.md", md);
+  })
+  .then(function() {
+    console.log("Successfully wrote to Readme.md");
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
